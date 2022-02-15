@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: beige;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 500;
+}
+
+.main_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 50px auto;
+  background-color: blue;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.input_box {
+  height: 5%;
+  overflow: hidden;
+  padding: 7px;
+}
+
+.input_box input[type=text] {
+  color: #00494d;
+  height: 36px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #c5e4e7;
+  border: none;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.tip_box {
+  height: 184px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 500;
+  padding: 7px;
+}
+
+.tip_box .parent_amount_box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46% 49%;
+      grid-template-columns: 46% 49%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 12px;
+}
+
+.tip_box .parent_amount_box .amount_box {
+  color: #f4fafa;
+  background-color: #00494d;
+  height: 35px;
+  width: 84px;
+  border-radius: 10px;
+}
+
+.tip_box .parent_amount_box .amount_box h3 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.display_box {
+  height: 160px;
+  background-color: #00494d;
+}
+
+.display_box .person_tip {
+  height: 34%;
+  padding: 10px;
+}
+
+.display_box .person_bill {
+  height: 34%;
+  padding: 10px;
+}
+
+.display_box .text {
+  font-size: 13px;
+  color: #c5e4e7;
+}
+
+.display_box .text .inner_txt {
+  color: #f4fafa;
+}
+
+.display_box .text .tip_amount_box, .display_box .text .bill_amount_box {
+  float: right;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #3ebdc2;
+  font-size: 24px;
+}
+
+.display_box .reset_btn {
+  height: 30%;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.display_box .reset_btn .btn {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  width: 90%;
+  height: 63%;
+  border-radius: 5px;
+  border: none;
+  background-color: #c5e4e7;
+}
+/*# sourceMappingURL=tip.css.map */

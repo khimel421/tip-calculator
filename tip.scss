@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+
+$Very_dark_cyan: hsl(183, 100%, 15%);
+$Dark_grayish_cyan: hsl(186, 14%, 43%);
+$Dark_grayish_cyan_two: hsl(184, 14%, 56%);
+$Light_grayish_cyan: hsl(185, 41%, 84%);
+$Light_grayish_cyan_two: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+// form inputs.......
+
+$font_size: 24px;
+$font-family: 'Kumbh Sans', sans-serif;
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: beige;
+    font-family: $font-family;
+}
+
+.label{
+    display: block;
+    font-size: 13px;
+    font-family: $font-family;
+    font-weight: 500;
+}
+
+.main_box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto;
+    background-color: blue;
+    padding: 20px;
+    background-color: $White;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.input_box{
+    //border: 1px red solid;
+    height: 5%;
+    overflow: hidden;
+    padding: 7px;
+
+    input[type = text]{
+        color: $Very_dark_cyan;
+        height: 36px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: $Light_grayish_cyan;
+        border: none;
+        font-family: $font-family;
+        font-size: $font_size;
+        font-weight: 700;
+        text-align: right;
+    }
+}
+
+.tip_box{
+    height: 184px;
+    //border: 1px solid red;
+    font-family: $font-family;
+    font-weight: 500;
+    padding: 7px;
+
+    .parent_amount_box{
+        display: grid;
+        grid-template-columns: 46% 49%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin-top: 12px;
+
+        .amount_box{
+            color: $Light_grayish_cyan_two;
+            background-color: $Very_dark_cyan;
+            height: 35px;
+            //border: 1px solid red;
+            width: 84px;
+            border-radius: 10px;
+            h3{
+                //font-size: 24px;
+                text-align: center;
+                margin-top: 5px;
+                font-size: 16px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+.display_box{
+    //border: 1px red solid;
+    height: 160px;
+    background-color: $Very_dark_cyan;
+    .person_tip{
+        //border: 1px red solid;
+        height: 34%;
+        padding: 10px;
+    }
+    .person_bill{
+        //border: 1px red solid;
+        height: 34%;
+        padding: 10px;
+    }
+    .text{
+        font-size: 13px;
+        color: $Light_grayish_cyan;
+        .inner_txt{
+            color: $Light_grayish_cyan_two;
+        }
+        .tip_amount_box , .bill_amount_box{
+            float: right;
+            font-family: $font-family;
+            color: rgb(62, 189, 194);
+            font-size: $font_size;
+            
+        }
+        // .bill_amount_box{
+        //     float: right;
+        // }
+    }
+    .reset_btn{
+        height: 30%;
+        text-align: center;
+        margin-top: 14px;
+        .btn{
+            font-family: $font-family;
+            font-size: 18px;
+            width: 90%;
+            height: 63%;
+            border-radius: 5px;
+            border: none;
+            background-color: $Light_grayish_cyan;
+        }
+    }
+}

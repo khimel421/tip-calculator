@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="tip.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,8 +16,46 @@
   </style>
 </head>
 <body>
+<div class="main_box">
+  <!-- bill box  -->
+  <div class="input_box">
+    <label for="Bill" class="label">Bill</label>
+    <input type="text"  class = "bill_amount">
+  </div>
+    <!-- customer number -->
+    <div class="input_box"> 
+      <label for="Bill" class="label">Number of People</label>
+      <input type="text"  class = "person" value="">
+    </div>
+  <!-- tip box -->
+  <div class="tip_box">
+    <label for="tip" class="label">Select Tip %</label>
+    <div class="parent_amount_box">
+      <button class="amount_box" value="0.05">5%</button>
+      <button class="amount_box" value="0.10">10%</button>
+      <button class="amount_box" value="0.15">15%</button>
+      <button class="amount_box" value="0.25">25%</button>
+      <button class="amount_box" value="0.50">50%</button>
+      <button class="amount_box">Custom</button>
+      
+    </div>
+  </div>
 
-  Bill
+  <!-- display_box -->
+  <div class="display_box">
+    <div class="person_tip"><span class="text top">  
+      <span class="inner_txt">Tip Amount </span> <br>
+      / person</span></div>
+    <div class="person_bill">
+      <span class="text bottom"> <span class="inner_txt">Total</span>  <br> / person</span>
+    </div>
+    <div class="reset_btn"><button class="btn">Reset</button></div>
+    
+  </div>
+</div>
+
+
+  <!-- Bill
 
   Select Tip %
   5%
@@ -34,8 +73,8 @@
   Total
   / person
 
-  Reset
-  
+  Reset -->
+  <script src="script.js"></script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
